@@ -1,0 +1,28 @@
+{
+  "author": "Daniel Franklin <git@danielfranklin.id.au>",
+  "bugs": {
+    "url": "https://github.com/dfranklinau/slides.css/issues/"
+  },
+  "description": "A CSS framework for creating PDF presentations.",
+  "devDependencies": {
+    "stylelint": "15.10.3",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-order": "6.0.3"
+  },
+  "engines": {
+    "node": "16.17.0",
+    "npm": "8.15.0"
+  },
+  "homepage": "https://github.com/dfranklinau/slides.css/",
+  "license": "ISC",
+  "name": "slides.css",
+  "private": "true",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dfranklinau/slides.css/"
+  },
+  "scripts": {
+    "lint": "stylelint slides.0.1.0.css"
+  },
+  "version": "0.1.0"
+}

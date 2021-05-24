@@ -1,0 +1,283 @@
+@charset "UTF-8";
+
+/*!
+ * slides.css v0.1.0
+ *
+ * Copyright (c) 2023, Daniel Franklin
+ * Licensed under ISC
+ */
+
+/*---------------------------------------------------------------------------*\
+
+  SETTINGS
+  ---------------------------------------------------------------------------
+  TOKENS...............CSS Custom Properties.
+
+  GENERIC
+  ---------------------------------------------------------------------------
+  RESET................General CSS resets.
+
+  COMPONENTS
+  ---------------------------------------------------------------------------
+  FIGURE...............Media and other content positioning.
+  FOOTER...............Used for copyright information at the bottom of each slide.
+  HEADER...............Used for branding at the top of each slide.
+  SLIDE................The base styling for slides.
+
+  UTILITIES
+  ---------------------------------------------------------------------------
+  TYPOGRAPHY...........Helper classes to modify typographic styles.
+
+\*---------------------------------------------------------------------------*/
+
+
+
+
+
+/*----------------------------------------------------------------------------*\
+  #SETTINGS
+\*----------------------------------------------------------------------------*/
+
+/*------------------------------------*\
+  #TOKENS
+\*------------------------------------*/
+
+:root {
+  --slides-css-color-code-background: #000000;
+  --slides-css-color-code-on-background: #FFFFFF;
+  --slides-css-color-kbd-background: var(--slides-css-color-code-background);
+  --slides-css-color-kbd-on-background: var(--slides-css-color-code-on-background);
+  --slides-css-color-slide-background: #FFFFFF;
+  --slides-css-color-slide-on-background: #000000;
+  --slides-css-slide-footer-spacing-offset: var(--slides-css-slide-spacing-offset-sm);
+  --slides-css-slide-header-spacing-offset: var(--slides-css-slide-spacing-offset-sm);
+  --slides-css-slide-spacing-offset-sm: 1.5rem;
+  --slides-css-slide-spacing-offset: 15rem;
+  --slides-css-slide-typography-line-height: 1.5;
+  --slides-css-slide-typography-margin-bottom: 1.5rem;
+}
+
+
+
+
+/*----------------------------------------------------------------------------*\
+  #GENERIC
+\*----------------------------------------------------------------------------*/
+
+/*------------------------------------*\
+  #RESET
+\*------------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+/**
+ * Removes any page margins from the page, although specific print options may
+ * still override this.
+ */
+@page {
+  margin: 0;
+}
+
+/**
+ * `height: 100%` is to support full-height slides across browsers. Applying
+ * `height: 100vh` on the `.slide` class ran into cross-browser compatibility
+ * issues where slides in Firefox were not the full height of the printed page.
+ */
+html,
+body {
+  background-color: var(--slides-css-color-slide-background);
+  height: 100%;
+  color: var(--slides-css-color-slide-on-background);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Reset the vertical rhythm and spacing on common elements.
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------*\
+  #COMPONENTS
+\*----------------------------------------------------------------------------*/
+
+/*------------------------------------*\
+  #FIGURE
+\*------------------------------------*/
+
+.slide-figure {
+  margin: 0;
+}
+
+.slide-figure--align-center .slide-figure__image {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+
+.slide-footer {
+  position: fixed;
+  right: var(--slides-css-slide-footer-spacing-offset);
+  bottom: var(--slides-css-slide-footer-spacing-offset);
+  z-index: 1;
+}
+
+
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+
+.slide-header {
+  position: fixed;
+  top: var(--slides-css-slide-header-spacing-offset);
+  left: var(--slides-css-slide-header-spacing-offset);
+  z-index: 1;
+}
+
+.slide-header--first-slide-only {
+  position: absolute;
+}
+
+
+/*------------------------------------*\
+  #SLIDE
+\*------------------------------------*/
+
+.slide {
+  display: flex;
+  position: relative;
+  z-index: 0;
+  height: 100%;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.slide--hide-header-and-footer {
+  z-index: 2;
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------*\
+  #UTILITIES
+\*----------------------------------------------------------------------------*/
+
+/*------------------------------------*\
+  #TYPOGRAPHY
+\*------------------------------------*/
+
+.slide-typography {
+  line-height: var(--slides-css-slide-typography-line-height);
+}
+
+/**
+ * Typography-specific styling is offered as an opt-in experience.
+ */
+.slide-typography--align-center h1,
+.slide-typography--align-center h2,
+.slide-typography--align-center h3,
+.slide-typography--align-center h4,
+.slide-typography--align-center h5,
+.slide-typography--align-center h6,
+.slide-typography--align-center p,
+.slide-typography--align-center ul,
+.slide-typography--align-center ol,
+.slide-typography--align-center dl {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 42rem;
+}
+
+.slide-typography--small {
+  font-size: 80%;
+}
+
+.slide-typography--text-center {
+  text-align: center;
+}
+
+.slide-typography h1,
+.slide-typography h2,
+.slide-typography h3,
+.slide-typography h4,
+.slide-typography h5,
+.slide-typography h6,
+.slide-typography p,
+.slide-typography ul,
+.slide-typography ol,
+.slide-typography dl,
+.slide-typography blockquote {
+  margin-bottom: var(--slides-css-slide-typography-margin-bottom);
+}
+
+.slide-typography ul,
+.slide-typography ol {
+  padding-left: 1.25em;
+}
+
+.slide-typography li + li {
+  margin-top: 0.5rem;
+}
+
+.slide-typography dl > dd + dt {
+  margin-top: 1rem;
+}
+
+.slide-typography code,
+.slide-typography kbd {
+  text-align: left;
+  font-size: 80%;
+}
+
+.slide-typography kbd {
+  margin-top: -0.25em;
+}
+
+.slide-typography pre > code {
+  text-align: left;
+  font-size: 1rem;
+  white-space: pre;
+}
+
+.slide-typography pre {
+  border: 0;
+  background-color: var(--slides-css-color-code-background);
+  color: var(--slides-css-color-code-on-background);
+}
+
+.slide-typography kbd {
+  border: 0;
+  background-color: var(--slides-css-color-kbd-background);
+  color: var(--slides-css-color-kbd-on-background);
+}
