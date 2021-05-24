@@ -1,0 +1,13 @@
+# slides.css
+
+A CSS framework for creating PDF presentations.
+
+slides.css is a HTML and CSS alternative to traditional slideshow software.
+
+It utilises a browser's "Save to PDF" capabilities and CSS positioning to create
+PDF presentations.
+
+This repository contains:
+
+- `slides.0.1.0.css`, the CSS framework powering the print styles; and
+- `sample`, customisation and overrides.

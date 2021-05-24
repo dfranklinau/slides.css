@@ -1,0 +1,279 @@
+@charset "UTF-8";
+
+/*!
+ * slides.css v1.0.0-beta
+ *
+ * Copyright (c) 2023, Daniel Franklin
+ * Licensed under ISC
+ */
+
+/*---------------------------------------------------------------------------*\
+
+  GENERIC
+  ---------------------------------------------------------------------------
+  Reset
+
+  COMPONENTS
+  ---------------------------------------------------------------------------
+  Figure
+  Footer
+  Header
+  Slide
+
+  UTILITIES
+  ---------------------------------------------------------------------------
+  Typography
+
+\*---------------------------------------------------------------------------*/
+
+
+
+
+
+/*----------------------------------------------------------------------------*\
+  #GENERIC
+\*----------------------------------------------------------------------------*/
+
+/*------------------------------------*\
+  #RESET
+\*------------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+/**
+ * Removes any page margins from the page, although specific print options might
+ * override this.
+ */
+@page {
+  margin: 0;
+}
+
+/**
+ * `height: 100%` is to support full-height slides across browsers.
+ *
+ * I tried using `height: 100vh` on the `.slide` class but ran into
+ * cross-browser compatibility issues where slides in Firefox were not the full
+ * height of the printed page.
+ */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Define the vertical rhythm and spacing on the elements that need it.
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------*\
+  #COMPONENTS
+\*----------------------------------------------------------------------------*/
+
+/*------------------------------------*\
+  #FIGURE
+\*------------------------------------*/
+
+.figure {
+  margin: 0;
+}
+
+.figure--align-center .figure__image {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+
+/**
+ * The slide footer will be printed on every page because of `position: fixed`;
+ */
+.footer {
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+}
+
+
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+
+/**
+ * The slide header will be printed on every page because of `position: fixed`;
+ */
+.header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+/**
+ * Use `position: absolute` if the header should only display on the first
+ * slide.
+ */
+.header--first-slide-only {
+  position: absolute;
+}
+
+
+/*------------------------------------*\
+  #SLIDE
+\*------------------------------------*/
+
+.slide {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  overflow: hidden;
+  height: 100%;
+}
+
+/**
+ * Raises the slide above the header and footer, effectively hiding them.
+ */
+.slide--hide-header-and-footer {
+  z-index: 2;
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------*\
+  #UTILITIES
+\*----------------------------------------------------------------------------*/
+
+/*------------------------------------*\
+  #TYPOGRAPHY
+\*------------------------------------*/
+
+/**
+ * Typography-specific styling is offered as an opt-in experience.
+ */
+.typography--align-center h1,
+.typography--align-center h2,
+.typography--align-center h3,
+.typography--align-center h4,
+.typography--align-center h5,
+.typography--align-center h6,
+.typography--align-center p,
+.typography--align-center ul,
+.typography--align-center ol,
+.typography--align-center dl {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 42rem;
+}
+
+.typography--small {
+  font-size: 80%;
+}
+
+.typography--text-center {
+  text-align: center;
+}
+
+.typography h1,
+.typography h2,
+.typography h3,
+.typography h4,
+.typography h5,
+.typography h6,
+.typography p,
+.typography ul,
+.typography ol,
+.typography dl,
+.typography blockquote {
+  margin-bottom: 1.5rem;
+}
+
+.typography ul,
+.typography ol {
+  padding-left: 1.25em;
+}
+
+.typography li + li {
+  margin-top: 0.5rem;
+}
+
+/**
+ * Reset the styling of description lists.
+ */
+.typography dl {
+  border: 0;
+  border-radius: 0;
+}
+
+.typography dl > dt {
+  margin-bottom: 0;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.typography dl > dd + dt {
+  margin-top: 1rem;
+}
+
+/**
+ * Adjust the font size of inline code and code blocks.
+ */
+.typography code,
+.typography kbd {
+  font-size: 80%;
+  text-align: left;
+}
+
+.typography kbd {
+  margin-top: -0.25em;
+}
+
+.typography pre > code {
+  font-size: 1rem;
+  text-align: left;
+  white-space: pre;
+}
+
+.typography pre {
+  border: 0;
+  background-color: var(--slides-color-pre-background, black);
+  color: var(--slides-color-pre, white);
+}
+
+.typography kbd {
+  border: 0;
+  background-color: var(--slides-color-on-background, white);
+  color: var(--slides-color-background, black);
+}
