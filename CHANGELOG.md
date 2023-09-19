@@ -8,6 +8,15 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 --------------------------------------------------------------------------------
 
+## [Unreleased]
+
+### Added
+
+- Added an optional JavaScript plugin.
+- Added support for `X of Y` styled page numbers via the JavaScript plugin.
+
+--------------------------------------------------------------------------------
+
 ## [0.1.0] - 2023-06-10
 
 ### Added
