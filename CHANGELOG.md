@@ -8,6 +8,14 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 --------------------------------------------------------------------------------
 
+## [Unreleased]
+
+### Fixed
+
+- Fixed the section in the README outlining the included files.
+
+--------------------------------------------------------------------------------
+
 ## [0.2.0] - 2023-10-12
 
 ### Added
