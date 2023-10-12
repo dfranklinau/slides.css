@@ -1,5 +1,5 @@
 /*!
- * slides.css v0.2.0
+ * slides.css v0.2.1
  *
  * Copyright (c) 2023, Daniel Franklin
  * Licensed under ISC
