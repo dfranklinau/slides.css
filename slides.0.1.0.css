@@ -12,18 +12,18 @@
   SETTINGS
   ---------------------------------------------------------------------------
   TOKENS............CSS Custom Properties for colours, spacing, etc.
- 
+
   GENERIC
   ---------------------------------------------------------------------------
   RESET.............CSS resets.
- 
+
   COMPONENTS
   ---------------------------------------------------------------------------
   FIGURE............Media (images/code blocks/etc.) styling.
   FOOTER............Content positioned at the bottom right corner of each slide.
   HEADER............Content positioned at the top left corner of each slide.
   SLIDE.............Base styling for every slide.
- 
+
   UTILITIES
   ---------------------------------------------------------------------------
   TYPOGRAPHY........Helper classes to conditionally apply typographic styling.
