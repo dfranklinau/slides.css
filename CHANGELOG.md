@@ -10,6 +10,10 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+
+- Added version information to the JavaScript plugin.
+
 ### Fixed
 
 - Fixed the section in the README outlining the included files.
