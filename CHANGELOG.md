@@ -13,6 +13,8 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 ### Fixed
 
 - Fixed the section in the README outlining the included files.
+- Fixed the `npm run lint` script to not include the version in the file name to
+  run `stylelint` against.
 
 --------------------------------------------------------------------------------
 

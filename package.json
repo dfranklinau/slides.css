@@ -21,7 +21,7 @@
     "url": "https://github.com/dfranklinau/slides.css/"
   },
   "scripts": {
-    "lint": "stylelint slides.0.1.0.css"
+    "lint": "stylelint slides.*.css"
   },
   "version": "0.2.0"
 }
