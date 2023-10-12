@@ -9,5 +9,5 @@ PDF presentations.
 
 This repository contains:
 
-- `slides.0.1.0.css`, the CSS framework powering the print styles; and
+- `slides.0.2.0.css`, the CSS framework powering the print styles; and
 - `sample`, customisation and overrides.
