@@ -14,6 +14,12 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Added an optional JavaScript plugin.
 - Added support for `X of Y` styled page numbers via the JavaScript plugin.
+- Added the `stylelint-config-dfranklinau` Stylelint plugin.
+
+### Fixed
+
+- Resolved `comment-whitespace-inside` errors.
+- Resolved `no-duplicate-selectors` errors.
 
 --------------------------------------------------------------------------------
 
