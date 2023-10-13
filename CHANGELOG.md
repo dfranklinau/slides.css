@@ -13,6 +13,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 ### Added
 
 - Added support for toggling a "DRAFT" overlay on slides.
+- Added ESLint.
 
 ### Changed
 
