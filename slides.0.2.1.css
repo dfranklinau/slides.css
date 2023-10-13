@@ -17,6 +17,10 @@
   ---------------------------------------------------------------------------
   RESET.............CSS resets.
 
+  BASE
+  ---------------------------------------------------------------------------
+  DRAFT.............Adds a "DRAFT" watermark to all slides.
+
   COMPONENTS
   ---------------------------------------------------------------------------
   FIGURE............Media (images/code blocks/etc.) styling.
@@ -50,6 +54,7 @@
   --slides-css-color-kbd-on-background: var(--slides-css-color-code-on-background);
   --slides-css-color-slide-background: #FFFFFF;
   --slides-css-color-slide-on-background: #000000;
+  --slides-css-text-draft: "DRAFT";
   --slides-css-slide-counter-spacing-offset: var(--slides-css-slide-spacing-offset-sm);
   --slides-css-slide-footer-spacing-offset: var(--slides-css-slide-spacing-offset-sm);
   --slides-css-slide-header-spacing-offset: var(--slides-css-slide-spacing-offset-sm);
@@ -118,6 +123,34 @@ dl,
 blockquote {
   margin: 0;
   padding: 0;
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+  #BASE
+\* -------------------------------------------------------------------------- */
+
+/* ---------------------------------- *\
+  #DRAFT
+\* ---------------------------------- */
+
+body.is-draft-mode {
+  position: fixed;
+  top: 50%;
+  opacity: 0.125;
+  z-index: 0;
+  width: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 17vw;
+  font-weight: 700;
+  letter-spacing: 1vw;
+  content: var(--slides-css-text-draft);
+  transform: translateY(-50%) rotate(-22.5deg);
+  transform-origin: center;
 }
 
 
