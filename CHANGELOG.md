@@ -14,6 +14,10 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Added support for toggling a "DRAFT" overlay on slides.
 
+### Changed
+
+- Defined `slides.*.js` as an Immediately Invoked Function Expression (IIFE).
+
 --------------------------------------------------------------------------------
 
 ## [0.2.1] - 2023-10-12
