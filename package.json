@@ -24,7 +24,12 @@
     "url": "https://github.com/dfranklinau/slides.css/"
   },
   "scripts": {
-    "lint": "stylelint slides.*.css"
+    "fix": "npm run fix:prettier",
+    "fix:prettier": "prettier *.{css,js} --write",
+    "lint": "npm run lint:eslint & npm run lint:stylelint",
+    "lint:eslint": "eslint *.js",
+    "lint:stylelint": "stylelint *.css",
+    "start": "npm run lint && npm run fix"
   },
   "version": "0.2.1"
 }

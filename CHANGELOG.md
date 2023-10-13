@@ -19,6 +19,8 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 ### Changed
 
 - Defined `slides.*.js` as an Immediately Invoked Function Expression (IIFE).
+- Reworked the npm scripts. `npm start` will run linters and fixers, while `npm
+  run lint` and `npm run fix` will perform either task individually.
 
 ---
 
