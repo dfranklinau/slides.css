@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic
 Versioning](https://semver.org/spec/v2.0.0.html).
 
---------------------------------------------------------------------------------
+---
 
 ## [Unreleased]
 
@@ -14,12 +14,13 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Added support for toggling a "DRAFT" overlay on slides.
 - Added ESLint.
+- Added Prettier.
 
 ### Changed
 
 - Defined `slides.*.js` as an Immediately Invoked Function Expression (IIFE).
 
---------------------------------------------------------------------------------
+---
 
 ## [0.2.1] - 2023-10-12
 
@@ -33,7 +34,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 - Fixed the `npm run lint` script to not include the version in the file name to
   run `stylelint` against.
 
---------------------------------------------------------------------------------
+---
 
 ## [0.2.0] - 2023-10-12
 
@@ -49,7 +50,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 - Resolved `comment-whitespace-inside` errors.
 - Resolved `no-duplicate-selectors` errors.
 
---------------------------------------------------------------------------------
+---
 
 ## [0.1.0] - 2023-06-10
 

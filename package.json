@@ -6,6 +6,8 @@
   "description": "A CSS framework for creating PDF presentations.",
   "devDependencies": {
     "eslint": "8.51.0",
+    "eslint-config-prettier": "9.0.0",
+    "prettier": "3.0.3",
     "stylelint": "15.10.3",
     "stylelint-config-dfranklinau": "github:dfranklinau/stylelint-config-dfranklinau#v1.1.0"
   },

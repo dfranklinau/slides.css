@@ -34,10 +34,6 @@
 
 \* -------------------------------------------------------------------------- */
 
-
-
-
-
 /* -------------------------------------------------------------------------- *\
   #SETTINGS
 \* -------------------------------------------------------------------------- */
@@ -49,15 +45,23 @@
 :root {
   --slides-css-counter-slide: counter(slides-css-counter-slide);
   --slides-css-color-code-background: #000000;
-  --slides-css-color-code-on-background: #FFFFFF;
+  --slides-css-color-code-on-background: #ffffff;
   --slides-css-color-kbd-background: var(--slides-css-color-code-background);
-  --slides-css-color-kbd-on-background: var(--slides-css-color-code-on-background);
-  --slides-css-color-slide-background: #FFFFFF;
+  --slides-css-color-kbd-on-background: var(
+    --slides-css-color-code-on-background
+  );
+  --slides-css-color-slide-background: #ffffff;
   --slides-css-color-slide-on-background: #000000;
   --slides-css-text-draft: "DRAFT";
-  --slides-css-slide-counter-spacing-offset: var(--slides-css-slide-spacing-offset-sm);
-  --slides-css-slide-footer-spacing-offset: var(--slides-css-slide-spacing-offset-sm);
-  --slides-css-slide-header-spacing-offset: var(--slides-css-slide-spacing-offset-sm);
+  --slides-css-slide-counter-spacing-offset: var(
+    --slides-css-slide-spacing-offset-sm
+  );
+  --slides-css-slide-footer-spacing-offset: var(
+    --slides-css-slide-spacing-offset-sm
+  );
+  --slides-css-slide-header-spacing-offset: var(
+    --slides-css-slide-spacing-offset-sm
+  );
   --slides-css-slide-spacing-offset-sm: 1.5rem;
   --slides-css-slide-spacing-offset: 15rem;
   --slides-css-slide-typography-line-height: 1.5;
@@ -65,10 +69,6 @@
 
   counter-reset: slides-css-counter-slide;
 }
-
-
-
-
 
 /* -------------------------------------------------------------------------- *\
   #GENERIC
@@ -125,10 +125,6 @@ blockquote {
   padding: 0;
 }
 
-
-
-
-
 /* -------------------------------------------------------------------------- *\
   #BASE
 \* -------------------------------------------------------------------------- */
@@ -153,10 +149,6 @@ body.is-draft-mode {
   transform-origin: center;
 }
 
-
-
-
-
 /* -------------------------------------------------------------------------- *\
   #COMPONENTS
 \* -------------------------------------------------------------------------- */
@@ -175,7 +167,6 @@ body.is-draft-mode {
   margin-left: auto;
 }
 
-
 /* ---------------------------------- *\
   #FOOTER
 \* ---------------------------------- */
@@ -186,7 +177,6 @@ body.is-draft-mode {
   bottom: var(--slides-css-slide-footer-spacing-offset);
   z-index: 1;
 }
-
 
 /* ---------------------------------- *\
   #HEADER
@@ -202,7 +192,6 @@ body.is-draft-mode {
 .slide-header--first-slide-only {
   position: absolute;
 }
-
 
 /* ---------------------------------- *\
   #SLIDE
@@ -230,10 +219,6 @@ body.is-draft-mode {
 .slide--hide-header-and-footer {
   z-index: 2;
 }
-
-
-
-
 
 /* -------------------------------------------------------------------------- *\
   #UTILITIES
