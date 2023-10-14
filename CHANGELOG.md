@@ -10,6 +10,10 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+
+- Added padding to the default `.slide` style.
+
 ### Changed
 
 - Removed the versioning from the CSS and JavaScript files.
