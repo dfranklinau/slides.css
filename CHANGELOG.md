@@ -8,6 +8,15 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [Unreleased]
+
+### Changed
+
+- Removed the versioning from the CSS and JavaScript files.
+- Moved the CSS and JavaScript files within a `src` directory.
+
+---
+
 ## [0.3.0 - 2023-10-14]
 
 ### Added
