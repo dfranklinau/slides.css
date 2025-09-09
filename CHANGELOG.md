@@ -10,6 +10,11 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Changed
+
+- Upgraded the Node.js version listed in `engines` to be between `24.2.0` and
+  `25.0.0`.
+
 ### Removed
 
 - Removed `-slide-` from CSS custom properties relating to colours, spacing and
