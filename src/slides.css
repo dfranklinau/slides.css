@@ -53,17 +53,10 @@
   --slides-css-color-slide-background: #ffffff;
   --slides-css-color-slide-on-background: #000000;
   --slides-css-text-draft: "DRAFT";
-  --slides-css-slide-counter-spacing-offset: var(
-    --slides-css-slide-spacing-offset-sm
-  );
-  --slides-css-slide-footer-spacing-offset: var(
-    --slides-css-slide-spacing-offset-sm
-  );
-  --slides-css-slide-header-spacing-offset: var(
-    --slides-css-slide-spacing-offset-sm
-  );
-  --slides-css-slide-spacing-offset-sm: 1.5rem;
-  --slides-css-slide-spacing-offset: 15rem;
+  --slides-css-spacing-counter-offset: 1.5rem;
+  --slides-css-spacing-footer-offset: 1.5rem;
+  --slides-css-spacing-header-offset: 1.5rem;
+  --slides-css-spacing-offset: 15rem;
   --slides-css-slide-typography-line-height: 1.5;
   --slides-css-slide-typography-margin-bottom: 1.5rem;
 
@@ -173,8 +166,8 @@ body.is-draft-mode {
 
 .slide-footer {
   position: fixed;
-  right: var(--slides-css-slide-footer-spacing-offset);
-  bottom: var(--slides-css-slide-footer-spacing-offset);
+  right: var(--slides-css-spacing-footer-offset);
+  bottom: var(--slides-css-spacing-footer-offset);
   z-index: 1;
 }
 
@@ -184,8 +177,8 @@ body.is-draft-mode {
 
 .slide-header {
   position: fixed;
-  top: var(--slides-css-slide-header-spacing-offset);
-  left: var(--slides-css-slide-header-spacing-offset);
+  top: var(--slides-css-spacing-header-offset);
+  left: var(--slides-css-spacing-header-offset);
   z-index: 1;
 }
 
@@ -201,7 +194,7 @@ body.is-draft-mode {
   display: flex;
   position: relative;
   z-index: 0;
-  padding: var(--slides-css-slide-spacing-offset);
+  padding: var(--slides-css-spacing-offset);
   height: 100%;
   overflow: hidden;
   flex-direction: column;
@@ -212,8 +205,8 @@ body.is-draft-mode {
 
 .slide::after {
   position: absolute;
-  bottom: var(--slides-css-slide-counter-spacing-offset);
-  left: var(--slides-css-slide-counter-spacing-offset);
+  bottom: var(--slides-css-spacing-counter-offset);
+  left: var(--slides-css-spacing-counter-offset);
   content: var(--slides-css-counter-slide);
 }
 
