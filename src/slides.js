@@ -1,7 +1,7 @@
 /*!
- * slides.css v0.3.0
+ * slides.css v0.3.1
  *
- * Copyright (c) 2023, Daniel Franklin
+ * Copyright (c) 2025, Daniel Franklin
  * Licensed under ISC
  */
 (() => {

@@ -31,5 +31,5 @@
     "lint:stylelint": "stylelint ./src/*.css",
     "start": "npm run lint && npm run fix"
   },
-  "version": "0.3.0"
+  "version": "0.3.1"
 }
