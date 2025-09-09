@@ -14,6 +14,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Removed `-slide-` from CSS custom properties relating to colours, spacing and
   typography.
+- Renamed `--slides-css-spacing-offset` to `--slides-css-spacing-margin`.
 
 ---
 
@@ -27,6 +28,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Removed the versioning from the CSS and JavaScript files.
 - Moved the CSS and JavaScript files within a `src` directory.
+- Changed the value of slide margins from `15rem` to `20mm`.
 
 ### Fixed
 

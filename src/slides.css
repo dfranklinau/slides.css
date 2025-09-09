@@ -56,7 +56,7 @@
   --slides-css-spacing-counter-offset: 1.5rem;
   --slides-css-spacing-footer-offset: 1.5rem;
   --slides-css-spacing-header-offset: 1.5rem;
-  --slides-css-spacing-offset: 15rem;
+  --slides-css-spacing-margin: 20mm;
   --slides-css-typography-line-height: 1.5;
   --slides-css-typography-margin-bottom: 1.5rem;
 
@@ -194,7 +194,7 @@ body.is-draft-mode {
   display: flex;
   position: relative;
   z-index: 0;
-  padding: var(--slides-css-spacing-offset);
+  padding: var(--slides-css-spacing-margin);
   height: 100%;
   overflow: hidden;
   flex-direction: column;
