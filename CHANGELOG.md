@@ -26,7 +26,6 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changed
 
-- Removed the versioning from the CSS and JavaScript files.
 - Moved the CSS and JavaScript files within a `src` directory.
 - Changed the value of slide margins from `15rem` to `20mm`.
 
