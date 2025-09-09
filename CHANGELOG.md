@@ -40,7 +40,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
-## [0.3.0 - 2023-10-14]
+## [0.3.0] - 2023-10-14
 
 ### Added
 
@@ -91,6 +91,8 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 ### Added
 
 - Everything.
+
+---
 
 [Unreleased]: https://github.com/dfranklinau/website-generator/compare/v0.3.1...HEAD
 [0.3.1]: https://github.com/dfranklinau/website-generator/releases/tag/v0.3.1
