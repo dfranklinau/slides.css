@@ -12,7 +12,8 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Removed
 
-- Removed `-slide-` from CSS custom properties relating to spacing.
+- Removed `-slide-` from CSS custom properties relating to colours, spacing and
+  typography.
 
 ---
 

@@ -50,15 +50,15 @@
   --slides-css-color-kbd-on-background: var(
     --slides-css-color-code-on-background
   );
-  --slides-css-color-slide-background: #ffffff;
-  --slides-css-color-slide-on-background: #000000;
+  --slides-css-color-background: #ffffff;
+  --slides-css-color-on-background: #000000;
   --slides-css-text-draft: "DRAFT";
   --slides-css-spacing-counter-offset: 1.5rem;
   --slides-css-spacing-footer-offset: 1.5rem;
   --slides-css-spacing-header-offset: 1.5rem;
   --slides-css-spacing-offset: 15rem;
-  --slides-css-slide-typography-line-height: 1.5;
-  --slides-css-slide-typography-margin-bottom: 1.5rem;
+  --slides-css-typography-line-height: 1.5;
+  --slides-css-typography-margin-bottom: 1.5rem;
 
   counter-reset: slides-css-counter-slide;
 }
@@ -90,9 +90,9 @@
  */
 html,
 body {
-  background-color: var(--slides-css-color-slide-background);
+  background-color: var(--slides-css-color-background);
   height: 100%;
-  color: var(--slides-css-color-slide-on-background);
+  color: var(--slides-css-color-on-background);
 }
 
 body {
@@ -223,7 +223,7 @@ body.is-draft-mode {
 \* ---------------------------------- */
 
 .slide-typography {
-  line-height: var(--slides-css-slide-typography-line-height);
+  line-height: var(--slides-css-typography-line-height);
 }
 
 /**
@@ -263,7 +263,7 @@ body.is-draft-mode {
 .slide-typography ol,
 .slide-typography dl,
 .slide-typography blockquote {
-  margin-bottom: var(--slides-css-slide-typography-margin-bottom);
+  margin-bottom: var(--slides-css-typography-margin-bottom);
 }
 
 .slide-typography ul,
