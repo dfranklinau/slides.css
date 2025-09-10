@@ -14,6 +14,8 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Upgraded the Node.js version listed in `engines` to be between `24.2.0` and
   `25.0.0`.
+- Upgraded `styelint` to `16.24.0`.
+- Upgraded `stylelint-config-dfranklinau` to `2.0.0`.
 
 ### Removed
 
