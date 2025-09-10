@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>slides.css / Daniel Franklin</title>
+  <link href="../src/slides.css" rel="stylesheet" />
+</head>
+<body>
+  <header role="banner" class="o-header u-clearlast slide-header slide-header--first-slide-only">
+    <h1>Header</h1>
+  </header>
+
+  <section class="slide slide--center">
+    <div class="slide-typography slide-typography--text-center">
+      <h1 class="text--full-width">slides.css</h1>
+      <p>A CSS framework for creating PDF presentations.</p>
+    </div>
+  </section>
+
+  <section class="slide slide--center">
+    <div class="slide-typography slide-typography--align-center">
+      <p>slides.css is a HTML and CSS alternative to traditional slideshow
+        software.</p>
+      <p>It utilises a browser's "Save to PDF" capabilities and CSS positioning
+        to create static PDF presentations.</p>
+    </div>
+  </section>
+
+  <section class="slide slide--center">
+    <div class="slide-typography slide-typography--align-center">
+      <p>By using HTML, traditional slideshows can be created in a highly accessible
+        format, structured with headings and other semantic elements.</p>
+      <p>Use PDF for visual presentations, then distribute the HTML for assistive
+        technologies.</p>
+    </div>
+  </section>
+
+  <section class="slide slide--center">
+    <div class="slide-typography slide-typography--align-center">
+      <p>slides.css offers the following features:</p>
+      <ul>
+        <li>fixed and non-fixed header and footer;</li>
+        <li>opt-in typography styling;</li>
+        <li>basic figure and figure caption styles;</li>
+        <li>page numbering (with JavaScript); and</li>
+        <li>configuration through CSS custom properties.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide slide--center">
+    <div class="typography typography--align-center">
+      <p>The default editor, typically <code>vi</code> or <code>vim</code>, will
+        now open the interactive rebase menu:</p>
+      <pre><code class="language-javascript">pick e93fd11 feat: add a `show` prop to `Component`
+pick 5ebafc1 chore: add tests for the `show` prop in `Component`
+pick 5199870 fix: fix the CSS for the `show` prop on `Component`
+pick 1e22aeb feat: render `Component` on the home page
+
+# Rebase b6158d8..1e22aeb onto b6158d8 (4 commands)
+#
+# Commands:
+# p, pick <commit> = use commit
+# r, reword <commit> = use commit, but edit the commit message
+# e, edit <commit> = use commit, but stop for amending
+# s, squash <commit> = use commit, but meld into previous commit
+...</code></pre>
+    </div>
+  </section>
+
+  <section class="slide slide--center">
+    <div>
+      <div class="typography typography--align-center typography--text-center">
+        <p>Rename the squashed commit:</p>
+      </div>
+      <figure class="figure figure--align-center">
+        <div class="figure__content">
+          <img class="figure__image" alt="" src="./figures/sourcetree-4.png" />
+        </div>
+        <figcaption class="figure__caption"></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <footer class="o-footer u-clearlast slide-footer">
+    <h2>Footer</h2>
+  </footer>
+
+  <script type="text/javascript" src="slides.0.3.0.js"></script>
+</body>
+</html>
