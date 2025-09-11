@@ -25,6 +25,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 - Upgraded `eslint-config-prettier` to `10.1.8`.
 - Replaced `.eslintrc.js` with `eslint.config.js` and updated the ESLint
   configuration to a new default via `npm init @eslint/config@latest`.
+- Upgraded `prettier` to `3.6.2`.
 
 ### Removed
 

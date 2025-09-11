@@ -8,7 +8,7 @@
     "@eslint/js": "9.35.0",
     "eslint-config-prettier": "10.1.8",
     "globals": "16.4.0",
-    "prettier": "3.0.3",
+    "prettier": "3.6.2",
     "stylelint": "16.24.0",
     "stylelint-config-dfranklinau": "github:dfranklinau/stylelint-config-dfranklinau#v2.0.0"
   },
