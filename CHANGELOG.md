@@ -10,12 +10,21 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+
+- Added `globals` to `devDependencies` as part of replacing `eslint` with
+  `@eslint/js@9.35.0`.
+
 ### Changed
 
 - Upgraded the Node.js version listed in `engines` to be between `24.2.0` and
   `25.0.0`.
 - Upgraded `styelint` to `16.24.0`.
 - Upgraded `stylelint-config-dfranklinau` to `2.0.0`.
+- Replaced `eslint` with `@eslint/js@9.35.0`.
+- Upgraded `eslint-config-prettier` to `10.1.8`.
+- Replaced `.eslintrc.js` with `eslint.config.js` and updated the ESLint
+  configuration to a new default via `npm init @eslint/config@latest`.
 
 ### Removed
 
