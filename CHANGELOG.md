@@ -14,6 +14,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Added `globals` to `devDependencies` as part of replacing `eslint` with
   `@eslint/js@9.35.0`.
+- Added CSS scroll snapping to slides.
 
 ### Changed
 

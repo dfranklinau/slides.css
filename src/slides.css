@@ -95,6 +95,10 @@ body {
   color: var(--slides-css-color-on-background);
 }
 
+html {
+  scroll-snap-type: y mandatory;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -201,6 +205,7 @@ body.is-draft-mode {
   align-items: stretch;
   justify-content: center;
   counter-increment: slides-css-counter-slide;
+  scroll-snap-align: start;
 }
 
 .slide::after {
