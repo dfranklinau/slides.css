@@ -6,8 +6,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic
 Versioning](https://semver.org/spec/v2.0.0.html).
 
----
-
 ## [Unreleased]
 
 ### Added
@@ -34,8 +32,6 @@ Versioning](https://semver.org/spec/v2.0.0.html).
   typography.
 - Renamed `--slides-css-spacing-offset` to `--slides-css-spacing-margin`.
 
----
-
 ## [0.3.1] - 2025-09-09
 
 ### Added
@@ -51,8 +47,6 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Updated the version number in `package-lock.json`.
 
----
-
 ## [0.3.0] - 2023-10-14
 
 ### Added
@@ -67,8 +61,6 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 - Reworked the npm scripts. `npm start` will run linters and fixers, while `npm
   run lint` and `npm run fix` will perform either task individually.
 
----
-
 ## [0.2.1] - 2023-10-12
 
 ### Added
@@ -80,8 +72,6 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 - Fixed the section in the README outlining the included files.
 - Fixed the `npm run lint` script to not include the version in the file name to
   run `stylelint` against.
-
----
 
 ## [0.2.0] - 2023-10-12
 
@@ -97,15 +87,11 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 - Resolved `comment-whitespace-inside` errors.
 - Resolved `no-duplicate-selectors` errors.
 
----
-
 ## [0.1.0] - 2023-06-10
 
 ### Added
 
 - Everything.
-
----
 
 [Unreleased]: https://github.com/dfranklinau/website-generator/compare/v0.3.1...HEAD
 [0.3.1]: https://github.com/dfranklinau/website-generator/releases/tag/v0.3.1
